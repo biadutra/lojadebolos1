@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja de bolos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+   
+</head>
+<body>
+
+  <nav>
+    
+  <div class="nav-left">
+    <img src="imagens/telefone.jpg" width="20" height="20" /> (00)00000-0000
+  </div>
+
+  <!-- Botão hambúrguer -->
+  <div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <div class="nav-center">
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre nós</a>
+    <a href="#catalogo">Pedidos</a>
+    <a href="#opinioes">Opiniões</a>
+    <a href="#faleconosco">Fale conosco</a>
+  </div>
+
+  <div class="nav-right">
+    <img src="imagens/icone_carrinho_de_compras.jpg" width="25" height="25" />
+  </div>
+</nav>
+
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Loja de Bolos</h1>
+    <img src="imagens/testando.jpg"  />
+    <p>Mais que bolos, experiências deliciosas</p>
+    <button class="btn" onclick="document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' })">CATÁLOGO</button>
+
+
+  </section>
+
+  <section class="section features">
+    <div class="feature">
+         <img src="imagens/entrega rápida.jpg" width="100" height="100"  />
+      <h3>Entrega rápida</h3>
+      <p>Entregas no mesmo dia</p>
+    </div>
+    <div class="feature">
+        <img src="imagens/gostoso.jpg" width="100" height="100"  />
+      <h3>Qualidade</h3>
+      <p>Testado e aprovado por nossos clientes</p>
+    </div>
+    <div class="feature">
+        <img src="imagens/ingredientes.jpg" width="100" height="100"  />
+      <h3>Ingredientes</h3>
+      <p>Usamos apenas ingredientes da melhor qualidade.</p>
+    </div>
+    <div class="feature">
+       <img src="imagens/chef.jpg" width="100px" height="80px">
+      <h3>Profissionais</h3>
+      <p>Bolos feitos por doceiros treinados e capacitados</p>
+    </div>
+  </section>
+
+  <section class="section about" id="sobre">
+    <h2>Sobre nós</h2>
+    <p>Criamos bolos deliciosos feitos com amor e dedicação há mais de 10 anos. 
+      <br>Explore nossa paixão em cada mordida</p>
+    <img src="imagens/cozinheira.jpg" style="width:300px; margin-top: 30px;">
+  </section>
+
+  <section class="catalog" id="catalogo">
+    <h2>Catálogo</h2>
+    <div class="item">
+      <img src="imagens/bolo_1.jpg" width="100%">
+      <br>
+      <p>Bolo 1</p>
+    </div>
+    <div class="item">
+      <img src="imagens/bolo_1.jpg" width="100%">
+      <p>Bolo 2</p>
+    </div>
+    <div class="item">
+      <img src="imagens/bolo_1.jpg" width="100%">
+      <p>Bolo 3</p>
+    </div>
+  </section>
+
+  <section class="reviews" id="opinioes">
+    <h2>Opiniões dos clientes</h2>
+    <div class="item">
+      <img src="imagens/mulher.jpg" width="80%" >
+      <p>"Melhor bolo que já provei" - Alice</p>
+    </div>
+      <div class="item">
+      <img src="imagens/mulher.jpg" width="80%" >
+      <p>"Melhor bolo que já provei" - Alice</p>
+    </div>
+      <div class="item">
+      <img src="imagens/mulher.jpg" width="80%" >
+      <p>"Melhor bolo que já provei" - Alice</p>
+    </div>
+  </section>
+
+  <section class="delivery">
+    <h2>Promoções</h2>
+    <br>
+    <p>Ganhe 50% de desconto em modelos selecionados</p>
+    <br>
+    <button class="btn" onclick="document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' })">
+  Compre agora
+</button>
+
+    <br><br>
+    <h2>Consulte o valor de entrega</h2>
+    <br>
+    <img src="imagens/entrega rápida.jpg" style="width:200px;">
+  </section>
+
+ <div class="mapa-container">
+  <h2>Nosso endereço</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=SEU_LINK_AQUI" 
+    width="100%" 
+    height="300" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+  <section class="contact" id="faleconosco">
+    <h2>Fale conosco</h2>
+    <form action="https://formsubmit.co/biadutras28@gmail.com" method="POST">
+     <input
+      type="text"
+      name="nome"
+      placeholder="Nome"
+      required
+      minlength="3"
+      title="Digite pelo menos 3 letras para o nome"
+    >
+      <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      required
+      title="Digite um e-mail válido"
+    >
+      <textarea
+      name="mensagem"
+      placeholder="Mensagem"
+      required
+      minlength="10"
+      title="Escreva pelo menos 10 caracteres"
+    ></textarea>
+        <!-- Proteções opcionais -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://sua-pagina.com/obrigado.html">
+      <button class="botao" type="submit">Enviar</button>
+      
+    </form>
+  </section>
+<!--whatsapp -->
+<a href="https://wa.me/5511993725955" target="_blank" class="btn-whatsapp">
+  <img src="imagens/whats.jpg" style="width:60px; height:60px;" alt="WhatsApp">
+</a>
+
+
+  <footer>
+    <p>&copy; 2025 DESIGN POR BEATRIZ DUTRA</p>
+  </footer>
+
+  <script src="js/scrypt.js"></script>
+</body>
+</html>

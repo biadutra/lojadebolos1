@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #4b2361, #8e3ab9);
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+/* MENU NORMAL VISÍVEL POR PADRÃO */
+.nav-center {
+  display: flex; /* Antes estava none, agora flex para aparecer no desktop */
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-center a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 20px;
+}
+
+.nav-center a:hover {
+  background-color: #ffc300;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.nav-left {
+  font-size: 14px;
+  background: #fff;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-right img {
+  width: 25px;
+  height: 25px;
+}
+
+/* BOTÃO HAMBÚRGUER ESCONDIDO NO DESKTOP */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 10px;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* RESTANTE DO SEU CSS ORIGINAL, SEM ALTERAÇÕES */
+
+.hero {
+  text-align: center;
+  position: relative;
+  padding: 50px 30px 25px;
+}
+
+.hero h1 {
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  letter-spacing: -10px;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  width: 600px;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 32px;
+  color: #eee;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  margin-top: 30px;
+  font-size: 20px;
+  background-color: #ffc300;
+  border: none;
+  padding: 40px 80px;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.hero .btn:hover {
+  background-color: #ff9500;
+}
+
+.section {
+  padding: 25px 25px;
+  text-align: center;
+  color: #333;
+  background: #FFFAFA;
+}
+
+.section.about {
+  background-color: #DDA0DD;
+  padding-bottom: 70px;
+}
+
+.section h2 {
+  color: #333;
+  font-size: 32px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.section.about p {
+  font-size: 25px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 200px;
+  margin: 20px;
+}
+
+.catalog h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.reviews {
+  background-color: #DDA0DD !important;
+  padding: 20px 20px;
+}
+
+.reviews h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.delivery h2 {
+  font-size: 32px;
+}
+
+.catalog,
+.reviews,
+.delivery,
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #FFFAFA;
+  color: #333;
+}
+
+.catalog .item,
+.reviews .item {
+  display: inline-block;
+  width: 180px;
+  margin: 20px;
+  color: #333;
+}
+
+.delivery p {
+  font-size: 32px;
+}
+.mapa-container {
+    background-color: #DDA0DD; /* cor de fundo clara */
+    padding: 20px;
+    text-align: center; /* centraliza o conteúdo dentro */
+  }
+
+  .mapa-container h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: #333;
+  }
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  background-color: #ffc300;
+  border: none;
+  padding: 40px 80px;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botao {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  background-color: #ffc300;
+  border: none;
+  padding: 10px 20px;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer {
+  background: #eecbff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* CSS para o botão de WhatsApp */
+.btn-whatsapp {
+  /* cor de fundo (green WhatsApp) */
+  background-color: #eecbff;
+ /* espaçamento interno: aumenta o “tamanho” do botão */
+  padding: 12px 20px;
+
+  /* arredonda as bordas */
+  border-radius: 70%;
+
+  /* remove bordas padrão do botão/âncora */
+  border: none;
+  text-decoration: none;
+
+  /* cursor de mãozinha ao passar o mouse */
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px; /* distância da base da tela */
+  right: 20px;  /* distância da borda direita */
+
+  /* transição suave para hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.btn-whatsapp:hover {
+  background-color: #1DA851; /* um verde um pouco mais escuro */
+}
+
+ 
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+
+@media (max-width: 768px) {
+  /* MOSTRAR BOTÃO HAMBÚRGUER */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* ESCONDER MENU NORMAL */
+  .nav-center {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #4b2361;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+    z-index: 1000;
+  }
+
+  /* MOSTRAR MENU QUANDO ATIVO */
+  .nav-center.active {
+    display: flex;
+  }
+
+  nav {
+    position: relative;
+  }
+}
